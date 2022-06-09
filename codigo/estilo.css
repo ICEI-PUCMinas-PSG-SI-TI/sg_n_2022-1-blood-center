@@ -336,7 +336,7 @@
 
 /* INICIO RESPONSIVIDADE*/
 
-@media screen and (min-width: 1001px) and (max-width: 1400px){
+@media screen and (min-width: 1002px){
     .name{
             display: none;
     }
@@ -346,10 +346,11 @@
 }
 
 
-@media screen and (min-width: 501px) and (max-width: 1000px){
+@media screen and (min-width: 501px) and (max-width: 764px){
     .menu nav{
             display: none;
     }
+    
     .name{
         display: flex;   
     }
