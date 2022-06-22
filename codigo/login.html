@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+  
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(45deg, #f33939, #cc8686);
+            text-align: center;
+        }
+        div{
+            background-color: rgb(143, 40, 49);
+            position: absolute;
+            top : 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color:rgb(247, 244, 244);
+        }
+        input{
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 15px;
+        
+        }
+    button{
+        background-color:#cf6969;
+        border: none;
+        padding: 10px ;
+        width: 100%;
+        border-radius: 10px;
+        color:white;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color:  whitesmoke;
+        cursor: pointer;
+        color:#ff0000;
+    }
+    </style>
+
+    <script>
+        function logar() {
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            if(email.value == '' && senha.value == ''){
+
+                location.href = "pagDoador.html";
+
+            }else if (email.value == '' && senha.value == '') {
+                
+                location.href = "pagReceptor.html";
+            }else{
+                alert('Usuário ou senha inválidos!')
+            }
+
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <div class="telalogin">
+        <form id="login" method= "post" action="https://postman-echo.com/post">
+        <h1>Login</h1>
+        <input type="text" id="email" name="email" placeholder="Email">
+        <br> <br>
+        <input type="password" id="senha" name="senha" placeholder="Senha">
+        <br><br>
+        <button type="submit" onclick="logar(); return false">Fazer login</button>
+    </form>
+    <p> Não tem uma conta? <a href="novodoador.html"> Cadastre-se </a></p>
+    </div>
+</body>
+</html>
