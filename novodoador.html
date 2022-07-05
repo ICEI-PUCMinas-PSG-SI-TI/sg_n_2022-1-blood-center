@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Cadastro novo doador</title>
+   <title>Cadastro novo doador</title>
 
    <style>
 
@@ -15,8 +15,8 @@
   background-color: rgb(216, 137, 144);
   display: inline-block;
   vertical-align: top;
-  margin-top: 50%;
-  margin-bottom: -35%;
+  margin-top: 47%;
+  margin-bottom: -30%;
   left: 50%;
   position: relative;
   transform: translate(-50%, -50%);
@@ -35,78 +35,25 @@ input{
 
 /* css para o botão do formulario  */
 button{
-    width: 100px;
-    text-align: center;
-    padding: 15px 20px;
-    border: 1px solid rgb(160, 149, 149);
-    border-radius: 6px;
-    background-color: #be5f5f;
-    font-size: 13px;
-    color:white;
-    left: 50%;
+  background-color: rgba(205, 12, 12, 0.335);
+  padding: 15px 20px;
+  border: 5px solid rgb(160, 149, 149);
+  border-radius: 10px;
+  font-size: 20px;
+  color:white;
+  margin-left: 30%;
+  margin-top: 3%;
 }
 button:hover{
         background-color:  whitesmoke;
         cursor: pointer;
-        color:#ff0000;
+        color:#d61d83;
     }
 
     
    </style>
 
-
-  <script>
-   function cadastrodoador(){
-    var nome = document.getElementById("nome");
-    var senha = document.getElementById("senha");
-    var email = document.getElementById("email");
-    var genero = document.getElementById("genero");
-    var estadocivil = document.getElementById("estadocivil");
-    var tiposangue = document.getElementById("tiposangue");
-    var estado = document.getElementById("estadoDoacao");
-    var cidade = document.getElementById("cidade");
-    var celular = document.getElementById("celular");
-    var observacao = document.getElementById("observacao");
-    var doacao = document.getElementById("doacao");
-    var rua = document.getElementById("rua");
-    var numero = document.getElementById("numero");
-    var bairro = document.getElementById("bairro");
-    var cep = document.getElementById("cep");
-
-    let dadosD = JSON.parse(localStorage.getItem("dadosDoador"));
-
-
-    if(dadosD == null){
-      localStorage.setItem("dadosDoador", "[]");
-      dadosD = [];
-    }
-    alert(dadosD);
-
-    var auxRegistro = {
-      nome: nomeDoador.value,
-      senha: senhaDoador.value,
-      email: emailDoador.value,
-      genero: genero.value,
-      estadocivil: estadocivil.value,
-      tiposangue: tiposangue.value,
-      estado:estado.value,
-      cidade: cidade.value,
-      celular:celular.value,
-      observacao: observacao.value,
-      doacao: doacao.checked,
-      rua:rua.value,
-      numero: numero.value,
-      bairro: bairro.value,
-      cep: cep.value
-
-   }
-   dadosD.push(auxRegistro);
-   alert("Cadastro para ser um doador foi realizador com sucesso");
-   localStorage.setItem("dadosDoador", JSON.stringify(dadosD));
-
-    };
-  </script>
-
+  
 </head>
 
 <body >
@@ -195,7 +142,7 @@ button:hover{
 
   <main class="container main">
    
-      <form class= "forms"  name="formdoador" method="post" action="pagDoador.php" onsubmit=cadastrodoador();>
+      <form class= "forms"  name="formdoador" pç>
           <fieldset>
           <h2 aling="center"><i>Faça o cadastro para ser um doador</i></h2>
 
@@ -203,19 +150,19 @@ button:hover{
         <!-- Campo para ser digitado o nome do doador-->
         <p>
           <label for="nomeDoador">Nome:</label>  
-          <input id="nomeDoador" name="nnome" type="text" size="42" placeholder="Digite o seu nome..."required="">
+          <input id="nomeDoador" name="nnome" type="text" size="42" placeholder="Digite o seu nome..."required="" >
         </p>
         
 
         <p>
           <label for="senhaDoador">Senha:</label>  
-          <input id="senhaDoador" name="nsenha" type="password" size="42" placeholder="Digite uma senha..." required="">
+          <input id="senhaDoador" name="nsenha" type="password" size="42" placeholder="Digite uma senha..." required="" >
         </p>
           
         <!-- Campo para ser digitado o e-mail do doador-->
         <p>
           <label for="emailDoador">E-mail: </label>  
-          <input id="emailDoador" name="nemail" type="text" size="42" placeholder="Digite o seu e-mail..." required="">
+          <input id="emailDoador" name="nemail" type="text" size="42" placeholder="Digite o seu e-mail..." required="" >
           
         </p>
         
@@ -247,7 +194,7 @@ button:hover{
         <p class="form-group">
           <label  for="tiposangue">Tipo sanguíneo: </label>
           
-            <select id="tiposangue" name="ntiposangue" required="">
+            <select id="tiposangue" name="ntiposangue" required="" >
               <option value="x">-</option>
               <option value ="A positivo">A positivo</option>
               <option value ="A negativo">A negativo</option>
@@ -300,14 +247,14 @@ button:hover{
         <!--Campo para cidade do usuario-->
         <p>
           <label for="cidade">Qual cidade você mora? </label>  
-          <input id="cidade" name="ncidade" type="text" placeholder="Dgite a sua cidade..." required="">
+          <input id="cidade" name="ncidade" type="text" placeholder="Dgite a sua cidade..." required=""  >
           
         </p>
         
         <!--Campo para celular -->
         <p>
           <label for="celular">Celular: </label>  
-          <input id="celular" name="ncelular" type="text" placeholder="Ex:(31)99999-9999" required="">
+          <input id="celular" name="ncelular" type="text" placeholder="Ex:(31)99999-9999" required="" >
         </p>
         
   <!--Campo para observações-->
@@ -330,19 +277,19 @@ button:hover{
           
      <p>
       <label for="rua">Rua: </label>  
-      <input id="rua" name="nrua" type="text" size="42" placeholder="Digite a rua em que reside..." required="">
+      <input id="rua" name="nrua" type="text" size="42" placeholder="Digite a rua em que reside..." required=""  >
       
     </p>
 
     <p>
       <label for="numero">n°: </label>  
-      <input id="numero" name="nnumero" type="text" size="10"  required="">
+      <input id="numero" name="nnumero" type="text" size="10"  required=""  >
       
     </p>
 
     <p>
       <label for="bairro">Bairro: </label>  
-      <input id="bairro" name="nbairro" type="text" size="42" placeholder="Digite o seu bairro..." required="">
+      <input id="bairro" name="nbairro" type="text" size="42" placeholder="Digite o seu bairro..." required=""  >
       
     </p>
 
@@ -350,7 +297,7 @@ button:hover{
 
     <p>
       <label for="cep">CEP: </label>  
-      <input id="cep" name="ncep" type="text" size="42" placeholder="Digite o seu CEP..." required="">
+      <input id="cep" name="ncep" type="text" size="42" placeholder="Digite o seu CEP..." required=""  >
       
     </p>
 
@@ -364,9 +311,9 @@ button:hover{
 
 
   <!--botão que vai enviar as informações-->
-  <button class="butao" type="submit" onclick="cadastrodoador()">Cadastrar</button>
+  <button class="butao" type="button" onclick="cadastrodoador()">Cadastrar doador</button>
   
-  
+
 
         </fieldset>
         </form>
@@ -382,7 +329,7 @@ button:hover{
     </div>
 </footer>
 <!--FIM DO RODAPÉ -->
-
+    <script src="doador.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

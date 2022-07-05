@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Hemocentros</title>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+
+  <style>
+
+   body{
+    background-color:  #808080;
+   }
+
+
+
+    #map { height: 1000px;
+           width: 1000px; 
+            margin-left: 15%;
+            border: 8px solid rgb(41, 39, 39);
+            border-radius: 10px;
+        }
+
+
+    h1{
+      font-size: 50px;
+      text-align: center;
+     color:#d61d83;
+     margin-top: 5%;
+    }
+
+    h3{
+      text-align: center;
+      color: black
+    }
+  </style>
+</head>
+  <body>
+   <div class="mapa">
+    <h1><b><i>Hemocentros localizados no Brasil</i></b></h1>
+
+        <h3>No mapa está marcando a localização de alguns hemocentros com seus respectivos endereços e contatos</h3>
+
+
+        <div id="map"></div>
+ 
+    </div>
+
+    <script src="apimapa.js"></script>
+
+
+
+
+  </body>
+</html>

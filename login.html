@@ -53,63 +53,53 @@
     button:hover{
         background-color:  whitesmoke;
         cursor: pointer;
-        color:#ff0000;
+        color:#d61d83;
     }
     </style>
 
     <script>
-      function logar (){
 
-         var usuarios = JSON.parse(localStorage.getItem("dadosDoador"));
-        
-        
-         if (emailDoador == emailInformado && senhaDoador == senhaInformada) {
-         alert("Bem vindo ao sistema")
-         location.href= "pagDoador.php";
- 
-} else {
- 
-          if (senhaDoador != senhaInformada) {
-          alert("Senha inválida. Tente novamente.")
-   
- 
-         } if (emailDoador != emailInformado); {
- 
-         alert("E-mail inválido. Tente novamente!");
-  
- 
-         } if (emailDoador != emailInformado && senhaDoador != senhaInformada) {
-          alert("E-mail e senha inválidos. Tente novamente.")
-    
- 
-          }
-           }
+function logar() {
 
-           var usuarios = JSON.parse(localStorage.getItem("dadosPaciente"));
+        alert("llgou");
 
-              if (emailPaciente == emailInformado && senhaPaciente == senhaInformada) {
-             alert("Bem vindo ao sistema")
-             location.href= "pagPaciente.php";
-  
-              } else {
-   
-             if (senhaPaciente != senhaInformada) {
-             alert("Senha inválida. Tente novamente.")
-   
- 
-             } if (emailPaciente != emailInformado); {
- 
-             alert("E-mail inválido. Tente novamente!");
-  
- 
-             } if (emailPaciente != emailInformado && senhaPaciente != senhaInformada) {
-              alert("E-mail e senha inválidos. Tente novamente.")
-    
- 
-          }
-           }
 
-         };
+       // PUXAR DO ARMAZENAMENTO 
+    var usuarios = JSON.parse(localStorage.getItem("dadosDoador"));
+    var usuarios = JSON.parse(localStorage.getItem("dadosPaciente"));
+
+    //PUXAR DA PÁGINA 
+    var emailDoador = document.getElementById('emailDoador').value;
+    var senhaDoador = document.getElementById('senhaDoador').value;
+
+    var emailPaciente = document.getElementById('emailPaciente').value;
+    var senhaPaciente = document.getElementById('senhaPaciente').value;
+
+
+    for( elemento in usuarios){
+        if(elemento.emailPaciente == null){
+            if (elemento.emailDoador == email){
+                if(elemento.senhaDoador == senha){
+                    location.href = "pagDoador.html";
+                }else{
+                    alert("Sua senha está incorreta!")
+                }
+            }
+        }
+
+        else{
+            if(elemento.emailPaciente == email){
+                if(elemento.senhaPaciente == senha){
+                    alert("Bem vindo ao sistema")
+                   window.location.href = "pagReceptor.html";
+                }else{
+                    alert("Sua senha está incorreta!")
+                }
+
+            }
+        }
+    }
+};
 
 
     </script>
@@ -119,12 +109,12 @@
 
 <body>
     <div class="telalogin">
-        <form id="login" method= "post" action="https://postman-echo.com/post">
+        <form id="login">
         <img class="foto" src="BC/login.png"  width="90" height="90">
         <h2><i>LOGIN</i></h2>
-        <input type="text" id="emailInformado" name="email" placeholder="Email">
+        <input type="text" id="email" name="email" placeholder="Email">
         <br> <br>
-        <input type="password" id="senhaInformada" name="senha" placeholder="Senha">
+        <input type="password" id="senha" name="senha" placeholder="Senha">
         <br><br>
         <button type="submit" onclick="logar(); return false">Fazer login</button>
     </form>
