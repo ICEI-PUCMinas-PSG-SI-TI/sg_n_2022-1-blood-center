@@ -125,31 +125,30 @@
 
 
 /*INICIO CONFIGURAÇÕES MAIS INFOS DOS BOTÕES*/
-.doenças1{
-    margin-left: 100px;
-    padding: 30px;
-}
+
 .h3{
    color: rgb(111, 22, 22);
    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.video1, doenças1{
-    display: inline-block;
-    vertical-align: top;
-    float: right;
-    padding: 80px;
-    margin-top: 50px;
-}
-.foto1{
-    float: left;
-    padding: 20px;
-    padding-left: 80px;
-}
-.requisitos1{
-    margin-top: 20px;
-    margin: 40px;
-    padding-left: 50px;
-}
+
+.temadoacao{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color:rgb(111, 22, 22);
+  }
+
+  .foto1{
+   margin-left: 8%;
+   margin-bottom: 4%;
+  }
+
+  .requisitos1{
+    margin-top: -25%;
+    margin-left: 32%;
+    margin-bottom: 5%;
+  }
+
 /*FIM CONFIGURAÇÕES MAIS INFOS DOS BOTÕES*/
 
 
@@ -255,13 +254,13 @@ ul{
 }
 .our-webcoderskull .cnt-block h3 a{
   text-decoration:none;
-	color:rgba(205, 12, 12, 0.335);
+	color:#ca7998;
 }
 .our-webcoderskull .cnt-block h3 a:hover{
 	color:#337ab7;
 }
 .our-webcoderskull .cnt-block p{ 
-   color:rgba(205, 12, 12, 0.335); 
+   color:#ca7998;
    font-size:13px; 
    line-height:20px; 
    font-weight:400;
@@ -276,7 +275,7 @@ ul{
 }
 .our-webcoderskull .cnt-block .follow-us li .fa{ 
    font-size:24px; 
-   color:#9e095b
+   color:#ca7998;
 }
 .our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
