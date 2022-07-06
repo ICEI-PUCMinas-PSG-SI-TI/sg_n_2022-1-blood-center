@@ -61,7 +61,7 @@
 
 function logar() {
 
-        alert("llgou");
+        alert("Entrou");
 
 
        // PUXAR DO ARMAZENAMENTO 
@@ -80,7 +80,7 @@ function logar() {
         if(elemento.emailPaciente == null){
             if (elemento.emailDoador == email){
                 if(elemento.senhaDoador == senha){
-                    location.href = "pagDoador.html";
+                    window.location.href ="pagDoador.html";
                 }else{
                     alert("Sua senha está incorreta!")
                 }
