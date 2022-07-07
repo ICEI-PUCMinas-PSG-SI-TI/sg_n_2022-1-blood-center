@@ -65,41 +65,31 @@ function logar() {
 
 
        // PUXAR DO ARMAZENAMENTO 
-    var usuarios = JSON.parse(localStorage.getItem("dadosDoador"));
-    var usuarios = JSON.parse(localStorage.getItem("dadosPaciente"));
+    var usuariosDoador = JSON.parse(localStorage.getItem("dadosDoador"));
+    var usuariosReceptor = JSON.parse(localStorage.getItem("dadosReceptor"));
 
     //PUXAR DA PÁGINA 
-    var emailDoador = document.getElementById('emailDoador').value;
-    var senhaDoador = document.getElementById('senhaDoador').value;
+    var emailLogin = document.getElementById('email').value;
+    var senhaLogin = document.getElementById('senha').value;
 
-    var emailPaciente = document.getElementById('emailPaciente').value;
-    var senhaPaciente = document.getElementById('senhaPaciente').value;
+   
+    alert(JSON.stringify(usuariosDoador));
 
-
-    for( elemento in usuarios){
-        if(elemento.emailPaciente == null){
-            if (elemento.emailDoador == email){
-                if(elemento.senhaDoador == senha){
-                    window.location.href ="pagDoador.html";
-                }else{
-                    alert("Sua senha está incorreta!")
-                }
-            }
-        }
-
-        else{
-            if(elemento.emailPaciente == email){
-                if(elemento.senhaPaciente == senha){
-                    alert("Bem vindo ao sistema")
-                   window.location.href = "pagReceptor.html";
-                }else{
-                    alert("Sua senha está incorreta!")
-                }
-
-            }
-        }
+    for( elemento in usuariosReceptor){
+        
+        if((elemento.email == emailLogin)&&(elemento.senhaPaciente == senhaLogin))  
+            window.location.href ="pagReceptor.html";
+    }    
+     
+    for( elemento in usuariosDoador){
+        alert(elemento.email);
+        if((elemento.email == emailLogin)&&(elemento.senhaPaciente == senhaLogin))  
+            window.location.href ="pagReceptor.html";
     }
-};
+
+        
+    
+   };
 
 
     </script>
@@ -116,7 +106,7 @@ function logar() {
         <br> <br>
         <input type="password" id="senha" name="senha" placeholder="Senha">
         <br><br>
-        <button type="submit" onclick="logar(); return false">Fazer login</button>
+        <button type="button" onclick="logar(); return false">Fazer login</button>
     </form>
     </div>
 </body>

@@ -46,7 +46,11 @@ function cadastroSolicitarDoacao(){
 
    localStorage.setItem("dadosReceptor", JSON.stringify(dadosR));
 
+   window.location.href="login.html";
+   
 
+  }
+  
   //A função chamardadosReceptor era para funcionar bucando os dados que estão armazenados no localStorage
   //e enviar para a pagina de perfil do receptor "pagReceptor.html"
       function chamardadosReceptor(){
@@ -80,11 +84,4 @@ function cadastroSolicitarDoacao(){
       document.getElementById("valornumeroPaciente").value= numero;
       document.getElementById("valorbairroPaciente").value= bairro;
       document.getElementById("valorcepPaciente").value= cep;
-      
-
-
-
-
-
-     }
-    };
+      }
