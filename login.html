@@ -60,36 +60,29 @@
     <script>
 
 function logar() {
-
-        alert("Entrou");
-
-
-       // PUXAR DO ARMAZENAMENTO 
+    // PUXAR DO ARMAZENAMENTO 
     var usuariosDoador = JSON.parse(localStorage.getItem("dadosDoador"));
     var usuariosReceptor = JSON.parse(localStorage.getItem("dadosReceptor"));
 
     //PUXAR DA PÁGINA 
     var emailLogin = document.getElementById('email').value;
     var senhaLogin = document.getElementById('senha').value;
-
-   
-    alert(JSON.stringify(usuariosDoador));
-
-    for( elemento in usuariosReceptor){
-        
-        if((elemento.email == emailLogin)&&(elemento.senhaPaciente == senhaLogin))  
-            window.location.href ="pagReceptor.html";
-    }    
-     
-    for( elemento in usuariosDoador){
-        alert(elemento.email);
-        if((elemento.email == emailLogin)&&(elemento.senhaPaciente == senhaLogin))  
-            window.location.href ="pagReceptor.html";
+    var doador = document.getElementById('doador').value;
+    console.log(usuariosDoador, usuariosReceptor, doador);
+    if (doador == "Sim"){
+        if(usuariosDoador != null){
+            if((usuariosDoador.email == emailLogin) && (usuariosDoador.senhaPaciente == senhaLogin))  
+            alert("Entrou!");
+                window.location.href ="pagDoador.html";
+        }
+    } else {
+        if(usuariosReceptor != null){
+            if((usuariosReceptor.email == emailLogin) && (usuariosReceptor.senha == senhaLogin)) {
+                window.location.href ="pagReceptor.html";
+            }
+        }
     }
-
-        
-    
-   };
+}
 
 
     </script>
@@ -106,7 +99,16 @@ function logar() {
         <br> <br>
         <input type="password" id="senha" name="senha" placeholder="Senha">
         <br><br>
-        <button type="button" onclick="logar(); return false">Fazer login</button>
+        <p>
+            <label> Você é doador? </label>  
+            <select id="doador">
+            <option value="x">-</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+            </select>
+           </p>
+        <br><br>
+        <button type="button" onclick="logar()">Fazer login</button>
     </form>
     </div>
 </body>
