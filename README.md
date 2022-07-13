@@ -6,58 +6,59 @@ Criamos este projeto para informar as pessoas sobre a doação sanguínea, como 
 ## Alunos integrantes da equipe
 
 * Júlia Mello Leal Cupertino
-O QUE DESENVOLVEU: 
-Página index.html
--HTML/CSS
-- Imagens do carrossel
-Página requisitos.html
--HTML/CSS
- Página doenças.html
--HTML/CSS
- Página quemsomos.html
--HTML/CSS
- Página login.html
-JavaScript
+  O QUE DESENVOLVEU: 
+  Página index.html
+   -HTML/CSS
+   - Imagens do carrossel
+  Página requisitos.html
+   -HTML/CSS
+  Página doenças.html
+   -HTML/CSS
+  Página quemsomos.html
+   -HTML/CSS
+  Página login.html
+   JavaScript
 
 * Karen de Jesus Bicalho
-O QUE DESENVOLVEU:
-Página novodoador.html
--HTML/CSS
-- JavaScript para cadastrar doador
- Página pagDoador.html
--HTML/CSS
--JavaScript para pagar as informs do localStorage
- Página pagReceptor.html
--HTML/CSS
--JavaScript para pegar as informs do localStorage
- Página login.html
--HTML/CSS
- chamamapa.html
--HTML/CSS
-- JavaScript com marcadores dos hemocentros.
+  O QUE DESENVOLVEU:
+  Página novodoador.html
+   -HTML/CSS 
+   - JavaScript para cadastrar doador
+  Página pagDoador.html
+   -HTML/CSS
+   -JavaScript para pagar as informs do localStorage
+  Página pagReceptor.html
+   -HTML/CSS
+   -JavaScript para pegar as informs do localStorage
+  Página login.html
+   -HTML/CSS
+  chamamapa.html
+   - JavaScript com marcadores dos hemocentros.
 
 * Kthelly Maievy Aguiar Leite
-O QUE DESENVOLVEU:
-Logomarca
-Página solicitar.html
--HTML/CSS
--JavaScripit para cadastrar receptor
-- deixou o input dos formulários para receber somente numero para telefone, numero
-residencial e cep.
-- Apresentou o projeto
-- vai apresenta a segunda apresentação
-- fazer slide para apresentar o projeto
+  O QUE DESENVOLVEU:
+   Logomarca
+   Página solicitar.html
+    -HTML/CSS
+    -JavaScripit para cadastrar receptor
+    - deixou o input dos formulários para receber somente numero para telefone, numero
+      residencial e cep.
+   chamamapa.html
+    -HTML/CSS
+   Apresentou o projeto
+   Vai apresenta a segunda apresentação
+   Fez os slides para as apresentações do projeto
 
 * Lucas Antônio Gregório Pidner
-O QUE DESENVOLVEU:
-hemocentro.html
--HTML/CSS
-- Procurou as informações
-- Criação e postes do Instagram 
+  O QUE DESENVOLVEU:
+  hemocentro.html
+   -HTML/CSS
+   - Procurou as informações
+   - Criação e postes do Instagram 
 
 * Rafael Lopes Fraga
-O QUE DESENVOLVEU:
-- procurou informações da API junto com o Lucas 
+  O QUE DESENVOLVEU:
+  - procurou informações da API junto com o Lucas 
 
 ## Professores responsáveis
 
@@ -78,4 +79,4 @@ O QUE DESENVOLVEU:
 
    Tela login: login.html
 
-*Link do vídeo: https://www.awesomescreenshot.com/video/9948111?key=8e44b65cfd99b8a340ac015f6d847e00
+* Link do vídeo: https://www.awesomescreenshot.com/video/9948111?key=8e44b65cfd99b8a340ac015f6d847e00
