@@ -1,21 +1,21 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Blood  Center
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Sistema de Informação diciplina Trabalho Interdisciplinar Aplicações Web
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
 > Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+> - Júlia Mello Leal Cupertino
+> - Karen de Jesus Bicalho
+> - Kthelly Maievy Aguiar Leite
+> - Lucas Antônio Gregório Pidner
+> - Rafael Lopes Fraga
+
 
 # Estrutura do Documento
 
@@ -55,8 +55,6 @@
 # Introdução
 
 ## Problema
-
-......  COLOQUE AQUI O SEU TEXTO ......
 
 > Nesse momento você deve apresentar o problema que a sua aplicação deve
 > resolver. No entanto, não é a hora de comentar sobre a aplicação.
