@@ -67,3 +67,15 @@ O QUE DESENVOLVEU:
 ## Link Trello : Organização das tarefas
 
   https://trello.com/b/m9y6NI1a/bood-center
+  
+## Informações importantes
+* Principais telas:  
+   Tela inicial para uso do sistema: index.html
+
+   Tela registro novo doador: novodoador.html
+
+   Tela registro para solicitar doação: solicitar.html
+
+   Tela login: login.html
+
+*Link do vídeo: https://www.awesomescreenshot.com/video/9948111?key=8e44b65cfd99b8a340ac015f6d847e00
