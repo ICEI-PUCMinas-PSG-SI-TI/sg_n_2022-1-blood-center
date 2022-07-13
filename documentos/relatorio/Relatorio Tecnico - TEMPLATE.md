@@ -5,7 +5,9 @@ Blood  Center
 
 `CURSO` 
 
-Sistema de Informação diciplina Trabalho Interdisciplinar Aplicações Web
+Sistema de Informação
+Trabalho  Interdiscipli Aplicações Web
+
 
 ## Participantes
 
