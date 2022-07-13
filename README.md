@@ -58,7 +58,6 @@ hemocentro.html
 * Rafael Lopes Fraga
 O QUE DESENVOLVEU:
 - procurou informações da API junto com o Lucas 
-- gravou o vídeo para a apresentação
 
 ## Professores responsáveis
 
